@@ -129,7 +129,7 @@ class Ising2D:
             if self.model == 'ising': # 1. only the nearest neighbours
                 deltaE = 0
                 for neigh in range(4):
-                    deltaE += 2*self.coupling*self.spins[site]*self.spins[self.neighbours[site, neigh]]
+                    deltaE += 2*self.coupling*self.spins[spin_location]*self.spins[self.neighbours[spin_location, neigh]]
             elif self.model == 'gauge': # 2. the two plaquettes it will affect
                 first_plaquette = spin_location // 2
                 
