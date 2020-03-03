@@ -1,3 +1,6 @@
+import numpy as np
+import random
+
 class Ising2D:
     """A versatile class for instantianting either the Ising Model or a Lattice Gauge Theory
     in two-dimensional space.
